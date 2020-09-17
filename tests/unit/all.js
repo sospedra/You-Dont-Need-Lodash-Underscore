@@ -116,6 +116,19 @@ describe('code snippet example', () => {
     })
   })
 
+  describe('range', () => {
+    const range = (start, end) => {
+      return [...new Array(end).keys()].slice(start)
+    };
+
+    it("_.range(3, 8);", () => {
+      assert.deepEqual(
+        _.range(3, 8),
+        range(3, 8)
+      )
+    })
+  })
+
   describe('assign', () => {
     function Foo() {
       this.c = 3;

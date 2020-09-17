@@ -2907,6 +2907,21 @@ Invokes the iteratee n times, returning an array of the results of each invocati
   // output: '[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]'
   ```
 
+### _.range
+Creates an array of elements split into groups the length of `size`.
+
+  ```js
+  // Lodash
+  var result = _.range(3, 8)
+  console.log(result)
+  // output: '[3, 4, 5, 6, 7, 8]'
+  
+  // Native
+  var result = [...new Array(8).keys()].slice(3)
+  console.log(result)
+  // output: '[3, 4, 5, 6, 7, 8]'
+  ```
+
 #### Browser Support for `Array.from()`
 
 ![Chrome][chrome-image] | ![Edge][edge-image] | ![Firefox][firefox-image] | ![IE][ie-image] | ![Opera][opera-image] | ![Safari][safari-image]
